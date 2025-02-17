@@ -1,0 +1,145 @@
+body {
+        display: flex;
+        justify-content: center; 
+        align-items: center;      
+        height: 100vh;            
+        margin: 0;
+
+    font-family: pf-videotext, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: hsl(0, 0%, 0%);
+    color: #00FFFF; 
+    line-height: 1.8;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: repeating-linear-gradient(
+        to bottom,
+        rgba(255, 255, 255, 0.02) 0px,
+        rgba(0, 0, 0, 0.05) 2px
+    );
+    pointer-events: none;
+}
+
+/* Headings */
+h1, h2 {
+    font-size: 3.5em;
+    line-height: 1.3;
+    font-family: "baroque-text-jf", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    letter-spacing: 2.5px;
+    color: #ffbcff;
+    -webkit-text-stroke: 1px #6c1fd3    ; 
+    text-shadow: 0 0 5px #00ffff;
+    margin-bottom: 15px;
+}
+
+/* Body Text */
+p {
+    font-family: pf-videotext, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.1em;
+    line-height: 1.8;
+    max-width: 580px; 
+    margin: auto;
+    padding-bottom: 15px;
+    color: #00FFFF;
+    text-shadow: 1px 1px 0px #004bc0;
+}
+
+/* Choice Links */
+.choice-container {
+    margin-top: 20px;
+}
+
+.choice-button {
+    font-family: pf-videotext, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.2em;
+    display: inline-block;
+    background-color: #7D33CC; 
+    color: white;
+    padding: 14px 28px;
+    margin: 12px;
+    text-decoration: none;
+    border-radius: 3px;
+    border: 4px solid #FFAAFF;
+    text-shadow: 0 0 6px #FFAAFF;
+    transition: background 0.3s ease, transform 0.2s ease-in-out, box-shadow 0.2s;
+    font-weight: bold;
+}
+
+/* Button Hover Effects */
+.choice-button:hover {
+    background-color: #00BFF;
+    color: gold;
+    transform: scale(1.08);
+    box-shadow: 0 0 14px rgba(255, 215, 0, 1);
+}
+
+.accent {
+    color: #FFAAFF; /* Pink */
+    font-weight: bold;
+}
+
+.highlight {
+    color: #B066E2; /* Lavender */
+    font-style: italic;
+}
+/* UI Box */
+.container {
+    width: 85%;
+    max-width: 750px;
+    margin: auto;
+    padding: 40px;
+    background: #040026;
+    border-radius: 12px;
+    border: 4px solid #635DFF;
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+/* Link Styling */
+a {
+        color: #34D1BF; /* Cyan glow */
+        text-decoration: none;
+        transition: color 0.3s ease, text-shadow 0.2s;
+}
+
+a:hover {
+    color: #FFD700;
+    text-shadow: 0 0 8px rgba(255, 215, 0, 1);
+}
+
+/* Mobile Fixes */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+        padding: 25px;
+    }
+    
+    h1, h2 {
+        font-size: 1.8em;
+    }
+
+    p {
+        font-size: 1.05em;
+    }
+
+    .choice-button {
+        font-size: 1em;
+        padding: 10px 20px;
+    }
+}
