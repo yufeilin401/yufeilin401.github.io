@@ -5,6 +5,8 @@ body {
         height: 100vh;            
         margin: 0;
 
+       cursor: url("images/cursor-main.png"), auto;
+
     font-family: pf-videotext, sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -14,6 +16,10 @@ body {
     text-align: center;
     padding: 20px;
     position: relative;
+}
+
+a, button, .choice-button {
+    cursor: url("images/cursor-click.png"), pointer;
 }
 
 body::before {
@@ -92,12 +98,12 @@ p {
 }
 
 .accent {
-    color: #FFAAFF; /* Pink */
+    color: #FFAAFF; 
     font-weight: bold;
 }
 
 .highlight {
-    color: #B066E2; /* Lavender */
+    color: #B066E2; 
     font-style: italic;
 }
 /* UI Box */
