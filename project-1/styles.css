@@ -78,16 +78,17 @@ p {
     border-radius: 3px;
     border: 4px solid #FFAAFF;
     text-shadow: 0 0 6px #FFAAFF;
-    transition: background 0.3s ease, transform 0.2s ease-in-out, box-shadow 0.2s;
+    transition: "background-color" 0.3s ease, transform 0.2s ease-in-out, box-shadow 0.2s;
     font-weight: bold;
 }
 
 /* Button Hover Effects */
 .choice-button:hover {
-    background-color: #00BFF;
-    color: gold;
+    background-color: #0c054e;
+    color: #FFAAFF;
     transform: scale(1.08);
-    box-shadow: 0 0 14px rgba(255, 215, 0, 1);
+    box-shadow: 0 0 12px #ffffff;
+    text-shadow: 0 0 6px hsl(0, 0%, 100%);
 }
 
 .accent {
@@ -119,8 +120,8 @@ a {
 }
 
 a:hover {
-    color: #FFD700;
-    text-shadow: 0 0 8px rgba(255, 215, 0, 1);
+    color: hsl(0, 0%, 100%);
+    text-shadow: 0 0 2px #ffffff;
 }
 
 /* Mobile Fixes */
