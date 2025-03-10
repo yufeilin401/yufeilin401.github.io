@@ -1,4 +1,4 @@
-/* Version 1: Poster Shape (Updated) */
+/* Version 1: Poster Shape */
 
 body {
   margin: 0;
@@ -9,6 +9,7 @@ body {
   font-weight: 400;
   font-style: normal;
   text-align: center;
+  text-shadow: 0 0 9px rgb(0, 0, 0);
 }
 
 /* Poster Container */
@@ -30,25 +31,29 @@ body {
 
 /* Title - McQueen: Joan of Arc */
 .title {
+  font-family: "garamond-premier-pro", serif;
+  font-weight: 700;
   font-size: 28px;
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 1px;
   padding: 5px 10px;
   width: 100%;
+  text-shadow: 0 0 6px rgb(0, 0, 0);
 }
 
 /* Main Word - "MARTYR" */
 .impact-word {
-  font-size: 80px;
-  font-family: ironwood-std, sans-serif;
-  font-weight: 400;
+  font-size: 100px;
+  font-family: "ironwood-std", sans-serif;
+  font-weight: 500;
   font-style: normal;
   color: darkred;
   padding: 5px;
   margin: 10px 0;
   text-transform: uppercase;
   transition: color 0.3s ease-in-out;
+  text-shadow: 0 0 6px rgb(0, 0, 0);
 }
 
 /* Subtitle */
@@ -58,6 +63,10 @@ body {
   color: white;
   padding: 5px;
   width: 100%;
+  font-family: "garamond-premier-pro", serif;
+  font-weight: 700;
+  font-style: italic;
+  text-shadow: 0 0 6px rgb(0, 0, 0);
 }
 
 /* Event Details */

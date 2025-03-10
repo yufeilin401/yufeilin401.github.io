@@ -14,7 +14,6 @@ body {
     height: 100vh;
 }
 
-/* Make sure the container fills the screen */
 .container {
     position: relative;
     width: 100vw;
@@ -31,14 +30,15 @@ body {
     font-weight: bold;
     text-transform: uppercase;
     color: white;
-
+    margin: 0;
 }
 
 /* Main Word (MARTYR) */
 .impact-word {
-    font-size: 15vw; /* Very large for emphasis */
-    font-family: 'Old English Text MT', 'Blackletter', serif;
-    font-weight: bold;
+  font-family: "ironwood-std", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+    font-size: 18vw;
     color: darkred;
     margin: 0;
     text-transform: uppercase;
@@ -56,7 +56,7 @@ body {
 /* Event Details (Date, Location) */
 .event-details {
     font-size: 1.5vw;
-    margin-top: 30px;
+    margin-top: 20px;
     text-transform: uppercase;
     letter-spacing: 2px;
     opacity: 0.8;

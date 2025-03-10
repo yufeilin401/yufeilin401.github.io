@@ -1,12 +1,13 @@
 /* Version 3: Ugly */
-/* Version 3: Ugly Poster */
 
 body {
     margin: 0;
     padding: 0;
     background: repeating-linear-gradient(45deg, lime, hotpink, cyan, yellow, red, purple);
     color: rgb(255, 0, 0); /
-    font-family: 'Comic Sans MS', cursive;
+    font-family: "ff-uberhand-text-pro", sans-serif;
+    font-weight: 400;
+    font-style: normal;
     text-align: center;
     animation: background-pulse 1s infinite alternate;
 }
