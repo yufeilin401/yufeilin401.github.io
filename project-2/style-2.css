@@ -1,0 +1,70 @@
+/* Reset default margin */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black !important;
+    color: white;
+    font-family: 'Garamond', serif;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Make sure the container fills the screen */
+.container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: black;
+}
+
+/* Exhibition Title */
+.title {
+    font-size: 4vw;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: white;
+}
+
+/* Main Word (MARTYR) */
+.impact-word {
+    font-size: 15vw; /* Very large for emphasis */
+    font-family: 'Old English Text MT', 'Blackletter', serif;
+    font-weight: bold;
+    color: darkred;
+    margin: 0;
+    text-transform: uppercase;
+    transition: color 0.3s ease-in-out;
+}
+
+/* Subtitle */
+.subtitle {
+    font-size: 2vw;
+    font-style: italic;
+    color: white;
+    margin-top: -20px;
+}
+
+/* Event Details (Date, Location) */
+.event-details {
+    font-size: 1.5vw;
+    margin-top: 30px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    opacity: 0.8;
+}
+
+/* Hover effect on 'MARTYR' for dramatic interaction */
+.impact-word:hover {
+    color: red;
+}
+
+/* Make sure event details don’t clutter */
+.event-details p {
+    margin: 5px;
+}
