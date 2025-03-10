@@ -9,7 +9,6 @@ body {
   font-weight: 400;
   font-style: normal;
   text-align: center;
-  text-shadow: 0 0 9px rgb(0, 0, 0);
 }
 
 /* Poster Container */
@@ -48,6 +47,7 @@ body {
   font-family: "ironwood-std", sans-serif;
   font-weight: 500;
   font-style: normal;
+  letter-spacing: 3px;
   color: darkred;
   padding: 5px;
   margin: 10px 0;
@@ -74,9 +74,10 @@ body {
   font-size: 14px;
   text-transform: uppercase;
   letter-spacing: 1px;
-  opacity: 0.9;
+  opacity: 1;
   padding: 5px;
   width: 100%;
+  text-shadow:0 0 10px black;
 }
 
 /* Hover effect for drama */
