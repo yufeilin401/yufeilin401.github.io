@@ -1,0 +1,100 @@
+/* Ugly 90s Retro Website Vibe */
+body {
+    margin: 0;
+    padding: 0;
+    background: url('images/burn.gif') center/cover no-repeat;
+    color: rgb(255, 0, 0);
+    font-family: "ff-uberhand-text-pro", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    animation: background-pulse 1s infinite alternate;
+}
+
+/* Poster Container */
+.container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 10px dashed magenta;
+    background: url('images/burn.jpg') center/cover no-repeat;
+    text-shadow: 3px 3px 0 blue, -3px -3px 0 yellow;
+}
+
+.container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 10px dashed magenta;
+    background: url('images/burn.jpg') center/cover no-repeat;
+    text-shadow: 3px 3px 0 blue, -3px -3px 0 yellow;
+}
+
+/* Header - Oversized, Bold, and Red */
+.title {
+    font-family: video;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 60px;
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+    text-shadow: 3px 3px yellow;
+    background: repeating-linear-gradient(45deg, yellow, red 10%, black 20%);
+    padding: 10px;
+    border: 5px solid yellow;
+}
+
+
+.impact-word {
+    font-family: video;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 50px;
+    font-weight: bold;
+    color: red;
+    text-shadow: 3px 3px yellow;
+}
+
+/* Marquee (Moving Text) */
+.subtitle {
+    font-family: video;
+    font-weight: 400;
+    font-size: 24px;
+    color: yellow;
+    background: red;
+    font-weight: bold;
+    padding: 5px;
+    border: 2px dashed yellow;
+    display: block;
+    animation: blink 1.5s step-start infinite;
+}
+
+/* Ugly Event Details */
+.event-details {
+    font-family: video;
+    font-weight: 400;
+    background: red;
+    padding: 15px;
+    border: 5px ridge yellow;
+}
+
+.event-details p {
+    font-family: video;
+    font-weight: 400;
+    font-size: 20px;
+    font-weight: bold;
+    color: yellow;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-shadow: 2px 2px red;
+}
+
+

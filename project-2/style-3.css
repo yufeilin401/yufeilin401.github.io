@@ -55,8 +55,8 @@ body {
     text-transform: uppercase;
     text-shadow: 5px 5px 0 black, -5px -5px 0 white;
     transition: transform 0.3s ease-in-out;
-    cursor: pointer; /* Ensure it's hoverable */
-    pointer-events: auto; /* Fixes hover issue */
+    cursor: pointer; /
+    pointer-events: auto;
 }
 
 /* Hover Effect on MARTYR */
@@ -64,17 +64,7 @@ body {
     transform: scale(1.2) rotate(5deg);
 }
 
-/* Subtitle Container (Holds flames) */
-.subtitle-container {
-    position: absolute;
-    width: 100vw;
-    height: 100vh;
-    top: 0;
-    left: 0;
-    pointer-events: none; /* Prevents interference with hover */
-}
 
-/* Subtitle Styling - Initially Invisible */
 .subtitle {
     font-family: "pf-videotext", sans-serif;
     font-weight: 400;
@@ -83,20 +73,5 @@ body {
     color: red;
     position: absolute;
     opacity: 1;
-    animation: flameUp ease-in-out forwards;
 }
 
-/* Chaotic Flame Movement */
-@keyframes flameUp {
-    0% { transform: translateY(0) scale(1) rotate(0deg); opacity: 1; }
-    25% { transform: translateY(-50px) scale(1.1) rotate(-5deg); opacity: 0.9; }
-    50% { transform: translateY(-100px) scale(1.2) rotate(5deg); opacity: 0.8; }
-    75% { transform: translateY(-200px) scale(1.3) rotate(-10deg); opacity: 0.5; }
-    100% { transform: translateY(-400px) scale(1.5) rotate(10deg); opacity: 0; } /* Fully disappears */
-}
-
-/* Background Animation */
-@keyframes background-pulse {
-    from { filter: hue-rotate(0deg); }
-    to { filter: hue-rotate(360deg); }
-}

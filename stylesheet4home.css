@@ -1,0 +1,83 @@
+/* Import a cute Google font */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&family=Sacramento&display=swap');
+
+/* General Styles */
+body {
+    background: #FBF3B9; /* Buttery Yellow */
+    color: #B7B1F2; /* Soft Lavender */
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* Main Content Frame */
+.frame {
+    max-width: 85%;
+    margin: 60px auto;
+    padding: 50px;
+    background: #FFDCCC;
+    border-radius: 15px;
+    border: 40px solid transparent;
+    border-image: url(ro) 50 round; /* Update with correct path */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    z-index: 2;
+}
+
+/* Header */
+h1 {
+    font-family: 'Sacramento', cursive;
+    font-size: 3rem;
+    color: #FDB7EA; /* Cotton Candy Pink */
+    text-shadow: 2px 2px 0 #FFDCCC, 4px 4px 0 white;
+    padding-top: 20px;
+}
+
+/* Navigation */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    margin: 10px 0;
+}
+
+/* Cute Buttons */
+a {
+    display: inline-block;
+    background: linear-gradient(45deg, #FDB7EA, #FFDCCC);
+    color: #B7B1F2;
+    text-decoration: none;
+    padding: 12px 25px;
+    border-radius: 25px;
+    font-weight: bold;
+    box-shadow: 3px 3px 0 #FDB7EA;
+    transition: all 0.3s ease-in-out;
+    font-size: 1.2rem;
+}
+
+/* Hover Effect */
+a:hover {
+    transform: translateY(-3px);
+    box-shadow: 5px 5px 0 #B7B1F2;
+    text-shadow: 1px 1px 3px white;
+}
+
+/* Footer */
+footer {
+    margin-top: 30px;
+    font-size: 0.9rem;
+    color: #B7B1F2;
+}
+
+/* Mobile Adjustments */
+@media (max-width: 768px) {
+    .frame {
+        max-width: 95%;
+        padding: 30px;
+    }
+    h1 {
+        font-size: 2.5rem;
+    }
+}
