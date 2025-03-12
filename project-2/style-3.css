@@ -62,6 +62,8 @@ body {
 /* Hover Effect on MARTYR */
 .impact-word:hover {
     transform: scale(1.2) rotate(5deg);
+    font-size: 130px;
+    transition: 3s ease-in-out;
 }
 
 
