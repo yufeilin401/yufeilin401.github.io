@@ -1,39 +1,47 @@
 /* Import a cute Google font */
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&family=Sacramento&display=swap');
 
-/* General Styles */
+/* 🌸 Prevent Scrolling & Center Content */
 body {
-    background: #FBF3B9; /* Buttery Yellow */
-    color: #B7B1F2; /* Soft Lavender */
+    background: #FBF3B9;
+    color: #B7B1F2;
     font-family: 'Quicksand', sans-serif;
     text-align: center;
     margin: 0;
     padding: 0;
+    height: 100vh; /* Make sure it fits in viewport */
+    overflow: hidden; /* Disable scrolling */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-/* Main Content Frame */
-.frame {
-    max-width: 85%;
-    margin: 60px auto;
-    padding: 50px;
-    background: #FFDCCC;
-    border-radius: 15px;
-    border: 40px solid transparent;
-    border-image: url(ro) 50 round; /* Update with correct path */
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    z-index: 2;
+/* 🌸 Lace Frame That Holds Content */
+.lace-container {
+    position: relative;
+    width: 50vw; /* Responsive width */
+    max-width: 600px; /* Prevents it from being too big */
+    height: 80vh; /* Keeps it within viewport */
+    padding: 8vh 5vw; /* Adds space inside */
+    background: url("images/oval lace.png") no-repeat center center;
+    background-size: contain;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
-/* Header */
+/* 🌸 Header Inside the Lace */
 h1 {
     font-family: 'Sacramento', cursive;
-    font-size: 3rem;
-    color: #FDB7EA; /* Cotton Candy Pink */
+    font-size: 2.5rem;
+    color: #FDB7EA;
     text-shadow: 2px 2px 0 #FFDCCC, 4px 4px 0 white;
-    padding-top: 20px;
+    margin: 0;
+    padding: 5px;
 }
 
-/* Navigation */
+/* 🌸 Project List */
 ul {
     list-style: none;
     padding: 0;
@@ -43,13 +51,13 @@ ul li {
     margin: 10px 0;
 }
 
-/* Cute Buttons */
+/* 🌸 Cute Buttons */
 a {
     display: inline-block;
     background: linear-gradient(45deg, #FDB7EA, #FFDCCC);
     color: #B7B1F2;
     text-decoration: none;
-    padding: 12px 25px;
+    padding: 10px 20px;
     border-radius: 25px;
     font-weight: bold;
     box-shadow: 3px 3px 0 #FDB7EA;
@@ -57,27 +65,21 @@ a {
     font-size: 1.2rem;
 }
 
-/* Hover Effect */
+/* 🌸 Hover Effect */
 a:hover {
     transform: translateY(-3px);
     box-shadow: 5px 5px 0 #B7B1F2;
     text-shadow: 1px 1px 3px white;
 }
 
-/* Footer */
-footer {
-    margin-top: 30px;
-    font-size: 0.9rem;
-    color: #B7B1F2;
-}
-
-/* Mobile Adjustments */
+/* 🌸 Mobile Adjustments */
 @media (max-width: 768px) {
-    .frame {
-        max-width: 95%;
-        padding: 30px;
+    .lace-container {
+        width: 75vw;
+        height: 85vh; 
+        padding: 6vh 3vw;
     }
     h1 {
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
 }
