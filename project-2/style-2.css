@@ -28,15 +28,15 @@ body {
 
 .lace-pattern {
     position: absolute;
-    width: 130%;
-    height: 130%;
+    width: 115%;
+    height: 115%;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     background: url('images/lace.png') no-repeat center center;
     background-size: contain;
     opacity: 0;
-    transition: opacity 1s ease-in-out, transform 5s ease-in-out;
+    transition: opacity 1s ease-in-out, transform 3s ease-in-out;
     z-index: 1;
 }
 
