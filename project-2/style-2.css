@@ -14,7 +14,6 @@ body {
     overflow: hidden;
 }
 
-/* Main Container */
 .container {
     position: relative;
     width: 100vw;
@@ -24,48 +23,59 @@ body {
     justify-content: center;
     align-items: center;
     background-color: black;
+    transform: translateY(10px);
 }
 
-/* Lace Pattern*/
 .lace-pattern {
     position: absolute;
-    width: 130%;  
+    width: 130%;
     height: 130%;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background: url('images/lace.png') no-repeat center center; 
-    background-size: contain; 
-    opacity: 0; 
-    transition: opacity 0.s ease-in-out, transform 0.2s ease-in-out;
+    background: url('images/lace.png') no-repeat center center;
+    background-size: contain;
+    opacity: 0;
+    transition: opacity 1s ease-in-out, transform 5s ease-in-out;
     z-index: 1;
 }
 
-
-/* Exhibition Title Image */
 .impact-word {
-    width: 80vw; 
+    width: 80vw;
     max-width: 3000px;
     height: auto;
     display: block;
     margin: 0 auto;
-    transition: transform 0.3s ease-in-out;
     position: relative;
+    transition: transform 0.3s ease-in-out;
     z-index: 2;
 }
 
-/* Hover Effect - Slightly Scale Up the title */
 .impact-word:hover {
     transform: scale(1.05);
 }
 
-/* Hover Effect - Show Lace */
-.container:hover .lace-pattern {
-    opacity: 1; 
-    transform: translate(-50%, -50%) scale(80%);
+.impact-word:hover + .lace-pattern {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1.1);
 }
 
-/* Subtitle */
+.title-link {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 2vw;
+    margin-top: 20px;
+    position: relative;
+    z-index: 10;
+}
+
+.title-link:hover {
+    color: red;
+    text-decoration: underline;
+}
+
 .subtitle {
     font-size: 2vw;
     font-style: italic;
@@ -75,7 +85,6 @@ body {
     z-index: 2;
 }
 
-/* Event Details */
 .event-details {
     font-size: 1.5vw;
     margin-top: 20px;
@@ -86,7 +95,6 @@ body {
     z-index: 2;
 }
 
-/* Ensure spacing remains consistent */
 .event-details p {
     margin: 5px;
 }
