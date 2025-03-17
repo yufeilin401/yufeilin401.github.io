@@ -80,7 +80,6 @@ body {
   text-shadow:0 0 10px black;
 }
 
-/* Ensure container is relative for positioning */
 .container {
   position: relative; 
   overflow: hidden; 
@@ -89,17 +88,17 @@ body {
 /* Fire Overlay */
 .fire-overlay {
   position: absolute;
-  bottom: 0; /* Sticks to the bottom of the container */
+  bottom: 0;
   left: 0;
   width: 100%;
-  height: 250px; /* Controls how much fire is visible */
+  height: 250px; 
   background: url('images/firee.gif') center/cover no-repeat;
   opacity: 0;
   transition: opacity 0.5s ease-in-out;
   pointer-events: none; 
 }
 
-/* Show Fire on Hover */
+/*Fire on Hover */
 .container:hover .fire-overlay {
   opacity: 1;
 }

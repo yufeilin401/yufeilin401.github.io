@@ -38,7 +38,7 @@ body {
     text-shadow: 3px 3px 0 blue, -3px -3px 0 yellow;
 }
 
-/* Header - Oversized, Bold, and Red */
+
 .title {
     font-family: video;
     font-weight: 700;
@@ -63,7 +63,6 @@ body {
     text-shadow: 3px 3px yellow;
 }
 
-/* Marquee (Moving Text) */
 .subtitle {
     font-family: video;
     font-weight: 400;
