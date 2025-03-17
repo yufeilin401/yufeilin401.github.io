@@ -36,7 +36,7 @@ body {
     background: url('images/lace.png') no-repeat center center;
     background-size: contain;
     opacity: 0;
-    transition: opacity 1s ease-in-out, transform 3s ease-in-out;
+    transition: opacity 2s ease-in-out, transform 5s ease-in-out;
     z-index: 1;
 }
 
@@ -73,7 +73,6 @@ body {
 
 .title-link:hover {
     color: red;
-    text-decoration: underline;
 }
 
 .subtitle {
