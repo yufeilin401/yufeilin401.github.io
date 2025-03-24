@@ -5,7 +5,7 @@
 body {
     background: #FBF3B9;
     color: #B7B1F2;
-    font-family: 'Quicksand', sans-serif;
+    font-family:Quicksand, sans-serif;
     text-align: center;
     margin: 0;
     padding: 0;
@@ -33,7 +33,7 @@ body {
 
 /* 🌸 Header Inside the Lace */
 h1 {
-    font-family: 'Sacramento', cursive;
+    font-family: Sacramento, cursive;
     font-size: 2.5rem;
     color: #FDB7EA;
     text-shadow: 2px 2px 0 #FFDCCC, 4px 4px 0 white;
