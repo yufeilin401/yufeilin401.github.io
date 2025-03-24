@@ -39,31 +39,38 @@ body, html {
 }
 
 textarea {
+    font-family: video-cond, serif;
+    font-weight: 300;
+    font-style: normal;
     width: 450px;
     padding: 12px;
     margin-bottom: 50px;
-    border: 2px solid #FFFFFF;
-    border-radius: 20%;
+    border: 1px solid #FFFFFF;
+    border-radius: 30px;
     background-color: transparent;
     color: white;
     font-size: 16px;
     resize: none;
+    box-shadow: 0 0 6px #FFAAFF;
 }
 
 button {
+    font-family: pf-videotext, sans-serif;
+    font-weight: 400;
+    font-style: normal;
     padding: 12px 24px;
     font-size: 18px;
     cursor: pointer;
-    background-color: #555;
+    background-color: hsl(267, 75%, 14%);
     color: white;
     border: none;
-    border-radius: 5px;
+    border-radius: 30px;
     transition: background-color 0.3s;
     margin-bottom: 50px;
 }
 
 button:hover {
-    background-color: #666;
+    background-color: hsl(267, 43%, 37%);
 }
 
 .answer {
