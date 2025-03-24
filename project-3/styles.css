@@ -2,9 +2,6 @@ body, html {
     height: 100%;
     margin: 0;
     color: white;
-    font-family: adorn-bouquet, sans-serif;
-    font-weight: normal;
-    font-style: normal;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -12,19 +9,26 @@ body, html {
 }
 
 .header h1 {
+    font-family: adorn-bouquet, sans-serif;
+    font-weight: normal;
+    font-style: normal;
     position: absolute;
     top: 0.5vw;
     left: 50px;
     font-size: 7vw;
     line-height: 5vw;
+    text-shadow: 0 0 6px #FFAAFF;
 }
 
 .tagline {
+    font-family: adorn-bouquet, sans-serif;
+    font-weight: normal;
+    font-style: normal;
     position: absolute;
     right: 200px;
-    bottom: 170px;
+    bottom: 160px;
     font-size: 30px;
-    color: #CCC;
+    color: hsl(0, 100%, 100%);
 }
 
 .input-area {
@@ -63,11 +67,15 @@ button:hover {
 }
 
 .answer {
+    font-family: pf-videotext, sans-serif;
+    font-weight: 400;
+    font-style: normal;
     position: absolute;
     top: 50%;
     left: 45%;
     transform: translate(-50%, -50%);
     width: 100%;
     text-align: center;
-    font-size: 50px;
+    font-size: 40px;
+    text-shadow: 0 0 10px #FFAAFF;
 }
