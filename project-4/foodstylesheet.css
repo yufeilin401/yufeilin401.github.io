@@ -1,0 +1,60 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #f1f1ba; /* Light Cream background for a neutral look */
+    color: #222b16; /* Dark Green for general text */
+    font-family: 'Quicksand', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+    background-color: #f1f1ba; /* Light Cream for content background */
+    border: 1px solid #ce7d44; /* Earth Orange for subtle border */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    width: 90%;
+    max-width: 600px;
+}
+
+h1 {
+    font-family: 'Bubblegum Sans', cursive;
+    color: #468731; /* Deep Green for titles */
+    font-size: 3rem;
+}
+
+input, textarea {
+    padding: 10px;
+    margin: 10px 0;
+    border: 2px solid #a8d969; /* Light Lime Green for an energetic touch */
+    background-color: transparent;
+    color: #222b16; /* Dark Green for text */
+    font-size: 1.2rem;
+    width: calc(100% - 24px);
+    box-sizing: border-box;
+}
+
+button {
+    cursor: pointer;
+    background-color: #71bd46; /* Fresh Green for primary buttons */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 12px 24px;
+    font-size: 1.2rem;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #f59519; /* Vibrant Orange for hover effect */
+}
+
+.answer {
+    margin-top: 20px;
+    font-size: 1.5rem;
+    color: #3e5e6e; /* Dull Blue for answered text */
+}
