@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Starlight Inquiries</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://use.typekit.net/ieb3cqt.css">
+    
+</head>
+<body onload="setInitialBackground()">
+<div id="sparkle-transition" class="sparkle-transition"></div>
+
+    <a href="index.html" class="home-icon" title="Return to Home">
+        <img src="images/star-icon.svg" alt="Home Icon" class="star-icon">
+      </a>
+     <div class="container">
+    <div class="header">
+        <h1>Starlight Inquiries</h1>
+    </div>
+    <div class="tagline">
+        Ask the stars anything you want to know...
+    </div>
+    <div class="input-area">
+        <textarea id="userQuestion" placeholder="Type your question..." rows="1"></textarea>
+        <button onclick="getAnswer()">Ask</button>
+    </div>
+    <div id="answer" class="answer"></div>
+    <script src="script.js"></script>
+    <script src="sparkle.js"></script>
+</div>
+
+</body>
+</html>

@@ -29,5 +29,9 @@ function getAnswer() {
         answerElement.textContent = answers[randomIndex];
         document.body.style.background = "url('images/crystal_ball.png') no-repeat center center fixed";
         document.body.style.backgroundSize = "cover";
+
+        document.body.style.text
     }, 3000);
 }
+
+

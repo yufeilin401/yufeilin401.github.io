@@ -22,6 +22,10 @@ a, button, .choice-button {
     cursor: url("images/cursor-click.png"), pointer;
 }
 
+a, button, [role="button"], input[type="submit"], input[type="button"]{
+    cursor: url("images/cursor-click.png"), pointer;
+}
+
 body::before {
     content: "";
     position: absolute;

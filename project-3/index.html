@@ -6,20 +6,17 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://use.typekit.net/ieb3cqt.css">
 </head>
-<body onload="setInitialBackground()">
-    <div class="header">
-        <h1>Starlight 
-            <br>
-            Inquiries</h1>
+<body class="intro-page">
+    <div id="sparkle-transition" class="sparkle-transition"></div>
+    <div class="intro-container">
+        <p>Welcome to</p>
+        <h1 class="intro-header">Starlight Inquiries</h1>
+        <p>Discover the secrets of the universe with our mystical crystal ball. Ask any question and receive guidance from the stars!</p>
+        <div class="start-button">
+            <a href="page-3.html" class="button-link">Begin Your Journey</a>
+            <a href="about.html" class="button-link">About This Project</a>
+            <script src="sparkle.js"></script>
+        </div>
     </div>
-    <div class="tagline">
-        Ask the stars anything you want to know...
-    </div>
-    <div class="input-area">
-        <textarea id="userQuestion" placeholder="Type your question..." rows="1"></textarea>
-        <button onclick="getAnswer()">Ask</button>
-    </div>
-    <div id="answer" class="answer"></div>
-    <script src="script.js"></script>
 </body>
 </html>

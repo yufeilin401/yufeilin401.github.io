@@ -6,6 +6,20 @@ body, html {
     justify-content: center;
     align-items: center;
     transition: background-image 0.5s ease-in-out;
+    cursor: url("images/cursor-main.png"), auto;
+}
+
+a, button, .start-button a, input[type="button"], input[type="submit"] {
+    cursor: url("images/cursor-click.png"), pointer;
+}
+
+.intro-page::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: url(images/crystal_ball.png) center/cover no-repeat;
+    filter: blur(8px);
+    z-index: -1;
 }
 
 .header h1 {
@@ -13,11 +27,13 @@ body, html {
     font-weight: normal;
     font-style: normal;
     position: absolute;
-    top: 0.5vw;
-    left: 50px;
-    font-size: 7vw;
+    font-size: 8vw;
     line-height: 5vw;
-    text-shadow: 0 0 6px #FFAAFF;
+    text-shadow: 0 0 15px #FFAAFF;
+    top: 0.5vw;
+    left: 50%;  
+    transform: translateX(-50%);
+    animation: softFlicker 4s ease-in-out infinite;
 }
 
 .tagline {
@@ -25,17 +41,20 @@ body, html {
     font-weight: normal;
     font-style: normal;
     position: absolute;
-    right: 200px;
-    bottom: 160px;
+    left: 50%;  
+    transform: translateX(-50%);
+    bottom: 140px; 
     font-size: 30px;
     color: hsl(0, 100%, 100%);
 }
 
 .input-area {
     position: absolute;
-    right: 50px;
-    bottom: 10px;
-    text-align: left;
+    left: 53%;  
+    transform: translateX(-50%);
+    bottom: 60px;
+    width: 100%; 
+    max-width: 600px; 
 }
 
 textarea {
@@ -44,14 +63,14 @@ textarea {
     font-style: normal;
     width: 450px;
     padding: 12px;
-    margin-bottom: 50px;
+    margin: 0 auto 50px; /* Centralize and manage bottom margin */
     border: 1px solid #FFFFFF;
     border-radius: 30px;
     background-color: transparent;
     color: white;
     font-size: 16px;
     resize: none;
-    box-shadow: 0 0 6px #FFAAFF;
+    box-shadow: 0 0 18px #FFAAFF;
 }
 
 button {
@@ -66,11 +85,17 @@ button {
     border: none;
     border-radius: 30px;
     transition: background-color 0.3s;
-    margin-bottom: 50px;
+    display: block;
+    margin: 0 auto; /
+    position: relative; 
+    margin-top: -45px;
+    left: calc(-60px); /* Moves the button 20px to the left */
+    transform: translateX(-75%);
 }
 
 button:hover {
     background-color: hsl(267, 43%, 37%);
+    color: #FFAAFF;
 }
 
 .answer {
@@ -79,10 +104,202 @@ button:hover {
     font-style: normal;
     position: absolute;
     top: 50%;
-    left: 45%;
+    left: 50%;
     transform: translate(-50%, -50%);
     width: 100%;
     text-align: center;
-    font-size: 40px;
+    font-size: 60px;
     text-shadow: 0 0 10px #FFAAFF;
 }
+
+.intro-container {
+    text-align: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    max-width: 900px;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    color: #FFAAFF;
+    font-family: pf-videotext, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    padding: 12px 24px;
+    font-size: 25px;
+}
+
+.about-container {
+    text-align: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    max-width: 800px;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    color: #FFAAFF;
+    font-family: pf-videotext, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    padding: 12px 24px;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+
+.start-button a {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    text-decoration: none;
+    padding: 12px 24px;
+    font-family: pf-videotext, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    cursor: pointer;
+    background-color: hsl(267, 75%, 14%);
+    color: white;
+    border: none;
+    border-radius: 30px;
+    transition: background-color 0.3s;
+    font-size: 20px;
+}
+
+.start-button a:hover {
+    background-color: hsl(267, 43%, 37%);
+    color: #FFAAFF;
+}
+
+.intro-header {
+    font-family: adorn-bouquet, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 8.5vw;
+    line-height: 1vw;
+    color: #FFFFFF;
+    text-shadow: 0 0 15px #FFAAFF;
+    animation: softFlicker 4s ease-in-out infinite;
+}
+
+.about-header {
+    font-family: adorn-bouquet, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 6vw;
+    line-height: 1vw;
+    color: #FFFFFF;
+    text-shadow: 0 0 15px #FFAAFF;
+    animation: softFlicker 4s ease-in-out infinite;
+}
+
+@keyframes softFlicker {
+    0%, 100% {
+        text-shadow: 
+            0 0 8px #FFAAFF, 
+            0 0 12px #FFAAFF, 
+            0 0 20px #FFAAFF;
+    }
+    25% {
+        text-shadow: 
+            0 0 4px #FFAAFF, 
+            0 0 6px #FFAAFF;
+    }
+    50% {
+        text-shadow: 
+            0 0 12px #FFAAFF, 
+            0 0 24px #FFAAFF, 
+            0 0 30px #FFAAFF;
+    }
+    75% {
+        text-shadow: 
+            0 0 5px #FFAAFF, 
+            0 0 10px #FFAAFF;
+    }
+}
+
+.emoji-sparkle {
+    position: absolute;
+    pointer-events: none;
+    z-index: 9999;
+    opacity: 0.9;
+    animation: floatFade 1s ease-out forwards;
+    filter: drop-shadow(0 0 6px white);
+    font-family: system-ui, sans-serif;
+    user-select: none;
+    white-space: nowrap;
+}
+
+@keyframes floatFade {
+    0% {
+        opacity: 1;
+        transform: scale(1) translateY(0);
+    }
+    100% {
+        opacity: 0;
+        transform: scale(1.2) translateY(-20px);
+    }
+}
+.home-icon {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 9999;
+}
+
+.star-icon {
+    width: 40px;
+    height: 40px;
+    filter: drop-shadow(0 0 6px #FFAAFF);
+    animation: pulseStar 3s ease-in-out infinite;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.star-icon:hover {
+    transform: scale(1.3) rotate(15deg);
+    filter: drop-shadow(0 0 12px #FFAAFF);
+}
+
+@keyframes pulseStar {
+    0%, 100% {
+        filter: drop-shadow(0 0 6px #FFAAFF);
+        transform: scale(1);
+    }
+    50% {
+        filter: drop-shadow(0 0 12px #FFAAFF);
+        transform: scale(1.1);
+    }
+}
+
+.sparkle-transition {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    pointer-events: none;
+    z-index: 9999;
+}
+
+.sparkle-emoji {
+    position: absolute;
+    font-size: 2rem;
+    opacity: 0;
+    animation: explodeSparkle 1s ease-out forwards;
+}
+
+@keyframes explodeSparkle {
+    0% {
+        transform: scale(1) translate(0, 0);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(2) translate(var(--x), var(--y));
+        opacity: 0;
+    }
+}
+
