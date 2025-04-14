@@ -21,7 +21,7 @@ function getAnswer() {
         return;
     }
 
-    document.body.style.background = "url('images/crystal ball.gif') no-repeat center center fixed";
+    document.body.style.background = "url('images/crystal-ball.gif') no-repeat center center fixed";
     document.body.style.backgroundSize = "cover";
 
     setTimeout(() => {
