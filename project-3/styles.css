@@ -63,7 +63,7 @@ textarea {
     font-style: normal;
     width: 450px;
     padding: 12px;
-    margin: 0 auto 50px; /* Centralize and manage bottom margin */
+    margin: 0 auto 50px;
     border: 1px solid #FFFFFF;
     border-radius: 30px;
     background-color: transparent;
@@ -89,7 +89,7 @@ button {
     margin: 0 auto; /
     position: relative; 
     margin-top: -45px;
-    left: calc(-60px); /* Moves the button 20px to the left */
+    left: calc(-60px); 
     transform: translateX(-75%);
 }
 
