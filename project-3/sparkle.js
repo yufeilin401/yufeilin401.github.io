@@ -10,8 +10,15 @@ document.addEventListener("mousemove", function(e) {
     const size = Math.random() * 12 + 10; // 10px – 22px
 
     sparkle.textContent = emoji;
-    sparkle.style.left = e.pageX + "px";
-    sparkle.style.top = e.pageY + "px";
+    const maxY = window.innerHeight - 30; // keep ~30px from bottom
+    const maxX = window.innerWidth - 30;
+
+    const sparkleX = Math.min(e.pageX, maxX);
+    const sparkleY = Math.min(e.pageY, maxY);
+
+    sparkle.style.left = sparkleX + "px";
+    sparkle.style.top = sparkleY + "px";
+
     sparkle.style.fontSize = size + "px";
     sparkle.style.color = color;
     sparkle.style.transform = `rotate(${Math.random() * 360}deg)`;

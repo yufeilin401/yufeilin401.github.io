@@ -1,13 +1,16 @@
 body, html {
-    height: 100%;
-    margin: 0;
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: background-image 0.5s ease-in-out;
-    cursor: url("images/cursor-main.png"), auto;
-}
+        height: 100%;
+        margin: 0;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: background-image 0.5s ease-in-out;
+        cursor: url("images/cursor-main.png"), auto;
+        overflow-x: hidden;   
+        min-height: 100vh;    
+        display: block;     
+      }
 
 a, button, .start-button a, input[type="button"], input[type="submit"] {
     cursor: url("images/cursor-click.png"), pointer;
@@ -147,8 +150,14 @@ button:hover {
     font-weight: 400;
     font-style: normal;
     padding: 12px 24px;
-    font-size: 18px;
+    font-size: 15px;
     line-height: 1.5;
+}
+
+.about-container p {
+    text-align: left;
+    max-width: 640px; 
+    margin: 0 auto 18px;
 }
 
 
@@ -260,7 +269,7 @@ button:hover {
 }
 
 .star-icon:hover {
-    transform: scale(1.3) rotate(15deg);
+    transform: scale(1.2) rotate(-10deg);
     filter: drop-shadow(0 0 12px #FFAAFF);
 }
 
@@ -277,13 +286,14 @@ button:hover {
 
 .sparkle-transition {
     position: fixed;
-    top: 0; left: 0;
+    top: 0;
+    left: 0;
     width: 100vw;
     height: 100vh;
-    overflow: hidden;
+    overflow: hidden;        
     pointer-events: none;
     z-index: 9999;
-}
+  }
 
 .sparkle-emoji {
     position: absolute;
@@ -302,4 +312,138 @@ button:hover {
         opacity: 0;
     }
 }
+.popup-container ul {
+    padding-left: 1.2em;
+    margin-bottom: 1em;
+    list-style-type: none;
+    font-family: pf-videotext, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .popup-container ul li {
+    margin-bottom: 8px;
+    position: relative;
+    padding-left: 1.2em;
+    font-family: pf-videotext, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .popup-container ul li::before {
+    content: "✨";
+    position: absolute;
+    left: 0;
+    color: #FFAAFF;
+    font-family: pf-videotext, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1em;
+  }
+  
+  .popup-container h3 {
+    font-family: pf-videotext, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+    margin-top: 24px;
+    margin-bottom: 8px;
+    color: #FFCCFF;
+    text-shadow: 0 0 5px #FFAAFF;
+  }
+  
+  .popup-container h3.affirmative {
+    color: #FFD6FF;
+  }
+  
+  .popup-container h3.neutral {
+    color: #B6A6FF;
+  }
+  
+  .popup-container h3.negative {
+    color: #FF9DA5;
+  }
+  
+  .popup-container h3.bonus {
+    color: #FFF3C9;
+    margin-top: 30px;
+  }
+  
+  .popup-container p {
+    font-family: pf-videotext, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 15px;
+    line-height: 1.7;
+    margin-bottom: 18px;
+    color: #EEDBFF;
+  }
+  
+  .popup-title {
+    font-family: adorn-bouquet, sans-serif;
+    font-size: 28px;
+    margin-bottom: 12px;
+    text-align: center;
+    color: #FFFFFF;
+    text-shadow: 0 0 10px #FFAAFF;
+  }
+  
+  .popup-container em {
+    color: #FFD6FF;
+  }
+  
+  .popup-container .tip {
+    font-style: italic;
+    text-align: center;
+    color: #FFEAFB;
+  }
 
+
+.moon-icon {
+    position: fixed;
+    top: 20px;
+    right: 75px;
+    width: 34px;
+    height: 34px;
+    cursor: pointer;
+    filter: drop-shadow(0 0 6px #FFAAFF);
+    transition: transform 0.3s ease, filter 0.3s ease;
+    z-index: 9999;
+    animation: pulseStar 3s ease-in-out infinite;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.moon-icon:hover {
+    transform: scale(1.2) rotate(-10deg);
+    filter: drop-shadow(0 0 12px #fff0ff);
+}
+
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;                
+    flex-direction: column;
+    z-index: 9998;
+    overflow-y: auto;
+    box-sizing: border-box;
+    padding: 60px 20px;
+    align-items: center;          
+    justify-content: flex-start; 
+    opacity: 80%;
+  }
+  
+  
+  .popup-container {
+    max-width: 800px;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.85);
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 0 20px #FFAAFF;
+    position: relative;
+  }
+  

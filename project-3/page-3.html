@@ -1,33 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Starlight Inquiries</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://use.typekit.net/ieb3cqt.css">
-    
+  <meta charset="UTF-8">
+  <title>Starlight Inquiries</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://use.typekit.net/ieb3cqt.css">
 </head>
-<body onload="setInitialBackground()">
-<div id="sparkle-transition" class="sparkle-transition"></div>
 
-    <a href="index.html" class="home-icon" title="Return to Home">
-        <img src="images/star-icon.svg" alt="Home Icon" class="star-icon">
-      </a>
-     <div class="container">
+<body onload="setInitialBackground()">
+  <div id="sparkle-transition" class="sparkle-transition"></div>
+
+  <!-- 🔘 Home Icon -->
+  <a href="index.html" class="home-icon" title="Return to Home">
+    <img src="images/star-icon.svg" alt="Home Icon" class="star-icon">
+  </a>
+
+  <!-- 🌙 Moon Icon -->
+  <img src="images/moon-icon.png" alt="Answer Guide" class="moon-icon" id="moon-btn" title="How to Read the Answer">
+<!-- 🌑 BACKDROP + POPUP -->
+<div id="moon-overlay" class="popup-overlay" style="display: none;">
+    <div class="popup-container" id="moon-popup">
+  
+      <h2 class="popup-title">🌙 How to Read Your Answer</h2>
+      <p><em>The stars have spoken… now what?</em></p>
+      <p>
+        Not every answer is direct. Some are glowing yes’s. Some are gentle no’s. Some… are wrapped in mist.
+        The key is to read between the sparkles. Here’s a short guide to help you interpret what your crystal ball may be telling you:
+      </p>
+  
+      <h3 class="answer-label affirmative">✅ Affirmative Answers (Yes, but with vibes)</h3>
+      <ul>
+        <li><strong>The stars align</strong> → A beautiful yes. Everything is in sync.</li>
+        <li><strong>You already know it’s yes</strong> → Deep down, you’ve always known.</li>
+        <li><strong>The answer is glowing</strong> → The signs are radiant and clear.</li>
+        <li><strong>Fate nods gently</strong> → Yes, but take it slow. Don’t rush fate.</li>
+        <li><strong>Yes, in more ways than one</strong> → It’s a yes, and then some.</li>
+      </ul>
+      <p>These answers are the universe smiling back at you. Sometimes direct, sometimes poetic—but they’re all gently nudging you forward.</p>
+  
+      <h3 class="answer-label neutral">❓ Non-Committal Answers (The fog is thick...)</h3>
+      <ul>
+        <li><strong>The mist is too thick to tell</strong> → Try again later. Or look within.</li>
+        <li><strong>Only time can unveil this one</strong> → Patience is part of the answer.</li>
+        <li><strong>Even the stars hesitate</strong> → Not every question has one truth.</li>
+        <li><strong>Ask again under a different moon</strong> → Maybe now isn’t the time.</li>
+      </ul>
+      <p>These are not no’s. These are invitations—to pause, to reflect, or to reframe your question.</p>
+  
+      <h3 class="answer-label negative">❌ Negative Answers (Soft no’s from the cosmos)</h3>
+      <ul>
+        <li><strong>The crystal dims… it’s unlikely</strong> → Gently, lovingly: not this time.</li>
+        <li><strong>Shadows point elsewhere</strong> → There’s another path for you.</li>
+        <li><strong>The path bends away</strong> → The answer is no… for now.</li>
+      </ul>
+      <p>No doesn't mean never. It just means: shift your gaze. There's another way.</p>
+  
+      <h3 class="bonus">✧ Bonus Tips ✧</h3>
+      <ul>
+        <li>Try rewording your question—be more specific, or more open-ended.</li>
+        <li>Don’t ask the same thing over and over. The stars get shy.</li>
+        <li>Use it for fun, reflection, or to spark conversation.</li>
+      </ul>
+      <p class="tip">This tool isn’t about “right” or “wrong.” It’s about letting go and seeing what finds you.</p>
+    </div>
+  </div>
+
+  <div class="container">
     <div class="header">
-        <h1>Starlight Inquiries</h1>
+      <h1>Starlight Inquiries</h1>
     </div>
     <div class="tagline">
-        Ask the stars anything you want to know...
+      Ask the stars anything you want to know...
     </div>
     <div class="input-area">
-        <textarea id="userQuestion" placeholder="Type your question..." rows="1"></textarea>
-        <button onclick="getAnswer()">Ask</button>
+      <textarea id="userQuestion" placeholder="Type your question..." rows="1"></textarea>
+      <button onclick="getAnswer()">Ask</button>
     </div>
     <div id="answer" class="answer"></div>
+
     <script src="script.js"></script>
     <script src="sparkle.js"></script>
-</div>
 
+    <!-- JavaScript for Moon Popup -->
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+          const moonBtn = document.getElementById("moon-btn");
+          const moonOverlay = document.getElementById("moon-overlay");
+      
+          moonBtn.addEventListener("click", () => {
+            if (moonOverlay.style.display === "flex") {
+              moonOverlay.style.display = "none";
+            } else {
+              moonOverlay.style.display = "flex";
+            }
+          });
+      
+          const closeMoon = document.getElementById("close-moon");
+          closeMoon.addEventListener("click", () => {
+            moonOverlay.style.display = "none";
+          });
+        });
+      </script>
+      
+      
+  </div>
 </body>
 </html>
