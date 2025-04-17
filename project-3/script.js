@@ -1,11 +1,31 @@
 const answers = [
-    "It is certain.", "It is decidedly so.", "Without a doubt.", "Yes - definitely.",
-    "You may rely on it.", "As I see it, yes.", "Most likely.", "Outlook good.",
-    "Yes.", "Signs point to yes.", "Reply hazy, try again.", "Ask again later.",
-    "Better not tell you now.", "Cannot predict now.", "Concentrate and ask again.",
-    "Don't count on it.", "My reply is no.", "My sources say no.", "Outlook not so good.",
-    "Very doubtful."
-];
+    // Affirmative (10)
+    "The stars align.",
+    "Absolutely, without a flicker.",
+    "The universe whispers yes.",
+    "It will come to be.",
+    "The crystal hums in agreement.",
+    "All signs sparkle toward yes.",
+    "Yes, in more ways than one.",
+    "Fate nods gently.",
+    "The answer is glowing.",
+    "You already know it’s yes.",
+  
+    // Neutral / Mysterious (5)
+    "Ask again under a different moon.",
+    "The mist is too thick to tell.",
+    "Wait… it’s still forming.",
+    "Even the stars hesitate.",
+    "Only time can unveil this one.",
+  
+    // Negative (5)
+    "The stars say not now.",
+    "The path bends away.",
+    "Shadows point elsewhere.",
+    "The answer is quiet tonight.",
+    "The crystal dims… it’s unlikely."
+  ];
+  
 
 function setInitialBackground() {
     document.body.style.background = "url('images/crystal_ball.png') no-repeat center center fixed";
