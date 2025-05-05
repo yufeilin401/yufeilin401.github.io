@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html, body {
+    width: 100%;
+    height: 100%;
+    background-color: #fff6e9;
+    font-family: 'Georgia', serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .container {
+    max-width: 90vw;
+    padding: 2vh 2vw;
+  }
+  
+  .time-text {
+    font-size: 6vw;       /* Bigger intro */
+    line-height: 1.2;
+    color: #000;
+  }
+  
+  #time {
+    font-family: 'Arial Black', sans-serif;
+    color: #ff5a36;
+    font-size: 12vw;      /* HUGE time */
+    line-height: 1.1;
+    display: block;
+    margin: 1vh 0;
+  }
+  
+  .quote-text {
+    margin-top: 4vh;
+    font-size: 5vw;       /* Big and expressive */
+    font-family: 'Comic Neue', sans-serif;
+    color: #30475e;
+  }
+  
