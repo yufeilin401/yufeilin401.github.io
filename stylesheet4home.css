@@ -1,13 +1,12 @@
-/* Import a cute Google font */
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&family=Sacramento&display=swap');
 
 body {
     background: repeating-linear-gradient(
         to right,
-        #FFE6F2,     /* pastel pink */
+        #FFE6F2,     
         #FFE6F2 40px,
         #FFF9D5 40px,
-        #FFF9D5 80px  /* pastel yellow */
+        #FFF9D5 80px 
     );
     color: #B7B1F2;
     font-family: Quicksand, sans-serif;
@@ -19,14 +18,16 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: url("images/cursor-main.png"), auto;
 }
 
+ 
 
-/* 🌸 Lace Frame That Holds Content */
+
 .lace-container {
     position: relative;
-    width: 50vw; /* Responsive width */
-    max-width: 600px; /* Prevents it from being too big */
+    width: 50vw;
+    max-width: 600px; 
     height: 80vh; /
     padding: 8vh 5vw;
     background: url("images/oval lace.png") no-repeat center center;
@@ -37,7 +38,6 @@ body {
     justify-content: center;
 }
 
-/* 🌸 Header Inside the Lace */
 h1 {
     font-family: Sacramento, cursive;
     font-size: 5rem;
@@ -47,7 +47,6 @@ h1 {
     padding: 5px;
 }
 
-/* 🌸 Project List */
 ul {
     list-style: none;
     padding: 0;
@@ -57,7 +56,7 @@ ul li {
     margin: 10px 0;
 }
 
-/* 🌸 Cute Buttons */
+
 a {
     display: inline-block;
     background: hwb(336 81% 0%);
@@ -71,14 +70,15 @@ a {
     font-size: 1.2rem;
 }
 
-/* 🌸 Hover Effect */
+
 a:hover {
     transform: translateY(-3px);
     box-shadow: 5px 5px 0 #B7B1F2;
     text-shadow: 1px 1px 3px white;
+    cursor: url("images/cursor-click.png"), pointer;
+    
 }
 
-/* 🌸 Mobile Adjustments */
 @media (max-width: 768px) {
     .lace-container {
         width: 75vw;
