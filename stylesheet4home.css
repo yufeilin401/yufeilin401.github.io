@@ -1,28 +1,34 @@
 /* Import a cute Google font */
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&family=Sacramento&display=swap');
 
-/* 🌸 Prevent Scrolling & Center Content */
 body {
-    background: #FBF3B9;
+    background: repeating-linear-gradient(
+        to right,
+        #FFE6F2,     /* pastel pink */
+        #FFE6F2 40px,
+        #FFF9D5 40px,
+        #FFF9D5 80px  /* pastel yellow */
+    );
     color: #B7B1F2;
-    font-family:Quicksand, sans-serif;
+    font-family: Quicksand, sans-serif;
     text-align: center;
     margin: 0;
     padding: 0;
-    height: 100vh; /* Make sure it fits in viewport */
-    overflow: hidden; /* Disable scrolling */
+    height: 100vh;
+    overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 
 /* 🌸 Lace Frame That Holds Content */
 .lace-container {
     position: relative;
     width: 50vw; /* Responsive width */
     max-width: 600px; /* Prevents it from being too big */
-    height: 80vh; /* Keeps it within viewport */
-    padding: 8vh 5vw; /* Adds space inside */
+    height: 80vh; /
+    padding: 8vh 5vw;
     background: url("images/oval lace.png") no-repeat center center;
     background-size: contain;
     display: flex;
@@ -34,7 +40,7 @@ body {
 /* 🌸 Header Inside the Lace */
 h1 {
     font-family: Sacramento, cursive;
-    font-size: 2.5rem;
+    font-size: 5rem;
     color: #FDB7EA;
     text-shadow: 2px 2px 0 #FFDCCC, 4px 4px 0 white;
     margin: 0;
@@ -54,7 +60,7 @@ ul li {
 /* 🌸 Cute Buttons */
 a {
     display: inline-block;
-    background: linear-gradient(45deg, #FDB7EA, #FFDCCC);
+    background: hwb(336 81% 0%);
     color: #B7B1F2;
     text-decoration: none;
     padding: 10px 20px;
