@@ -2,14 +2,29 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Funny Clock</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mean Clock</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="style.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Aclonica&family=Instrument+Serif:ital@0;1&family=Italianno&family=Jacquard+24&family=Lexend+Deca:wght@100..900&display=swap" rel="stylesheet">
+  <!-- CSS -->
+   <link href="style.css" rel="stylesheet">
 </head>
 <body>
-  <div class="container">
-    <p class="time-text">It is currently <span id="time">--:--</span></p>
-    <p class="quote-text" id="quote">Loading wisdom...</p>
+  <div class="outer">
+    <div class="container" id="content">
+      <p class="line1">It is currently <span id="time">--:--</span></p>
+      <p class="line2">in the <span class="period">afternoon</span>, and</p>
+      <p id="quote">“Loading quote…”</p>
+    </div>
+  </div>
+
+  <!-- Minute Progress Bar -->
+  <div id="minuteBar">
+    <div id="fill"></div>
   </div>
 
   <script src="script.js"></script>

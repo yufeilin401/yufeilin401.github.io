@@ -143,7 +143,7 @@ button:hover {
     width: 80%;
     max-width: 800px;
     padding: 20px;
-    background: rgba(0, 0, 0, 0.7);
+    background: hsla(0, 0%, 0%, 0.7);
     border-radius: 10px;
     color: #FFAAFF;
     font-family: pf-videotext, sans-serif;
