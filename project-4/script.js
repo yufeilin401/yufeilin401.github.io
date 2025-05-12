@@ -158,9 +158,9 @@ quotes[2] = {
   22: "No worries. You’ll regret this later.",
   23: "Go ahead, romanticize your suffering.",
   24: "If overanalysis burned calories, you'd be shredded.",
-  25: "You’re three Googles away from a life crisis.",
+  25: "You’re three Googles away<br>from a life crisis.",
   26: "Everything’s too loud and too quiet at once.",
-  27: "This is the plot twist nobody asked for.",
+  27: "This is the plot twist nobody<br>asked for.",
   28: "The moon is watching you spiral.",
   29: "You're running on chaos and notifications.",
   30: "Honestly? You're killing it. Slowly.",
@@ -346,7 +346,7 @@ quotes[5] = {
   21: "You're one blink away from enlightenment or a nap.",
   22: "Even your motivation hit snooze.",
   23: "Welcome to the sleep-deprived sunrise show.",
-  24: "Outside is slowly turning into a painting.",
+  24: "Outside is slowly turning<br>into a painting.",
   25: "This is a new day, allegedly.",
   26: "Even the sky is struggling to commit.",
   27: "You’re technically alive. Spiritually TBD.",
@@ -1529,39 +1529,39 @@ function updateClock() {
 
   timeEl.innerText = hour12 + ":" + String(minute).padStart(2, "0") + " " + ampm;
 
-  if (hour >= 5 && hour < 11) {
-    periodEl.innerText = "morning";
-    document.body.style.backgroundColor = "#FFFBDA";
-    bar.style.backgroundColor = "#FFB347";
-    timeEl.style.color = "#FF9248";
-    quoteEl.style.color = "#333333";
-    document.querySelector(".line1").style.color = "#333333";
-    document.querySelector(".line2").style.color = "#333333";
-  } else if (hour >= 11 && hour < 17) {
-    periodEl.innerText = "afternoon";
-    document.body.style.backgroundColor = "#FFF3E2";
-    bar.style.backgroundColor = "#FF5A36";
-    timeEl.style.color = "#FF5A36";
-    quoteEl.style.color = "#222222";
-    document.querySelector(".line1").style.color = "#222222";
-    document.querySelector(".line2").style.color = "#222222";
-  } else if (hour >= 17 && hour < 20) {
-    periodEl.innerText = "evening";
-    document.body.style.backgroundColor = "#F7D4BC";
-    bar.style.backgroundColor = "#D8572A";
-    timeEl.style.color = "#D8572A";
-    quoteEl.style.color = "#2D1C16";
-    document.querySelector(".line1").style.color = "#2D1C16";
-    document.querySelector(".line2").style.color = "#2D1C16";
-  } else {
-    periodEl.innerText = "nighttime";
-    document.body.style.backgroundColor = "#1E1E3F";
-    bar.style.backgroundColor = "#85C1E9";
-    timeEl.style.color = "#85C1E9";
-    quoteEl.style.color = "#FDFD96";
-    document.querySelector(".line1").style.color = "#ffffff";
-    document.querySelector(".line2").style.color = "#ffffff";
-  }
+if (hour >= 5 && hour < 11) {
+  periodEl.innerText = "morning";
+  document.body.style.backgroundColor = "#FFF8E1";
+  bar.style.backgroundColor = "#FFCF48"; 
+  timeEl.style.color = "#FF8C42";
+  quoteEl.style.color = "#AC7B5B"; 
+  document.querySelector(".line1").style.color = "#3F3F3F";
+  document.querySelector(".line2").style.color = "#3F3F3F";
+} else if (hour >= 11 && hour < 17) {
+  periodEl.innerText = "afternoon";
+  document.body.style.backgroundColor = "#ff895e"; 
+  bar.style.backgroundColor = "#FFA552"; 
+  timeEl.style.color = "#ffd000"; 
+  quoteEl.style.color = "B25D38"; 
+  document.querySelector(".line1").style.color = "#3B2F2F";
+  document.querySelector(".line2").style.color = "#3B2F2F";
+} else if (hour >= 17 && hour < 20) {
+  periodEl.innerText = "evening";
+  document.body.style.backgroundColor = "#FFD3E0";
+  bar.style.backgroundColor = "#A76DFF";
+  timeEl.style.color = "#FF9671"; 
+  quoteEl.style.color = "#B25D38";
+  document.querySelector(".line1").style.color = "#301934";
+  document.querySelector(".line2").style.color = "#301934";
+} else {
+  periodEl.innerText = "nighttime";
+  document.body.style.backgroundColor = "#1A1C2C"; 
+  bar.style.backgroundColor = "#597DCE"; 
+  timeEl.style.color = "#C1D3FF"; 
+  quoteEl.style.color = "#F6E7B6"; 
+  document.querySelector(".line1").style.color = "#FFFFFF";
+  document.querySelector(".line2").style.color = "#FFFFFF";
+}
 
   if (quotes[hour] && quotes[hour][minute]) {
     quoteEl.innerHTML = "“" + quotes[hour][minute] + "”";
